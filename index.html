@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+    <style>
+        .container{
+            margin: 5px 5px;
+            padding: 5px 5px;
+            flex-direction: column;
+            background-color: lightgrey;
+            border: 3px solid black ;
+            text-align: center;
+            align-items: center;
+            font-size: 10px;
+            
+        }
+
+        .table{
+            width: auto; 
+            margin: 20px auto;
+            padding: 20px 20px;
+            overflow: auto;
+            border-collapse: collapse;
+            border: 3px solid black;
+            vertical-align: middle;
+        }
+        
+        .table-header{
+            text-align: left;
+            border: 2px solid black;
+        }
+        
+    .btncontainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn{
+        width: auto;
+        margin: 10px 10px;
+        padding: 5px 5px;
+        background-color: rgb(239, 140, 18);
+        border: 2px solid black;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+        align-items: center ;
+        border: 3px solid black ; 
+    }
+    .navbar{
+        background-color: rgb(10, 184, 155);
+        padding: 10px 5px ;
+        text-align: left;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .navbar img{
+        height: 30px;
+        float: right;
+        margin-top: -4px;
+        margin-right: 10px;
+        border-radius: 100%;
+        box-shadow: 0 0 10px rgb(244, 241, 241);
+    }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+        <a href="index.html">Home</a> |
+        <a href="form.html">Login</a>
+        <a href="index.html"><img src="logo.jpg" alt="Logo" /></a>
+    </nav>
+    <div class="container">
+      <h1>This is Time Table Page</h1>
+      <table class="table" border="1">
+        <thead  class="container">
+          <th class="header" colspan="10">Table A(2b)</th>
+          
+        </thead>
+        <tbody >
+            <tr  class="container">
+                <th rowspan="3" colspan="2"  class="container">ethnicity</th>
+                <th colspan="8">No. of Stations and Percent of Total</th>
+            </tr>
+
+            <tr  class="container">
+                <th colspan="2" >nationality</th>
+                <td colspan="2">nielsen<br> DMA 1-50</td>
+                <td colspan="2">DMA<br /> 51-100</td>
+                <td colspan="2">101+</td>
+                
+            </tr>
+            <tr  class="container">
+                <td>No. </td>
+                <td>%</td>
+                <td>No. </td>
+                <td>%</td>
+                <td>No. </td>
+                <td>%</td>
+                <td>No. </td>
+                <td>%</td>
+            </tr>
+
+            <tr >
+                <th rowspan="3"  class="container">Hispanic or Latino</th>
+                <td>female</td>
+                <td>96</td>
+                <td>7.7</td>
+                <td>69</td>
+                <td>14.8</td>
+                <td>9</td>
+                <td>2.7</td>
+                <td>18</td>
+                <td>4.1</td>
+            </tr>
+
+            <tr >
+                <td>male</td>
+                <td>96</td>
+                <td>7.7</td>
+                <td>69</td>
+                <td>14.8</td>
+                <td>9</td>
+                <td>2.7</td>
+                <td>18</td>
+                <td>4.1</td>
+            </tr>
+            <tr >
+                <td>total</td>
+                <td>192</td>
+                <td>15.4</td>
+                <td>138</td>
+                <td>29.6</td>
+                <td>18</td>
+                <td>5.4</td>
+                <td>36</td>
+                <td>8.2</td>
+            </tr >
+            <tr>
+                <th rowspan="3"  class="container">Non-Hispanic or Latino</th>
+                <td>female</td>
+                <td>96</td>
+                <td>7.7</td>
+                <td>69</td>
+                <td>14.8</td>
+                <td>9</td>
+                <td>2.7</td>
+                <td>18</td>
+                <td>4.1</td>
+            </tr>
+            <tr>
+                <td>male</td>
+                <td>96</td>
+                <td>7.7</td>
+                <td>69</td>
+                <td>14.8</td>
+                <td>9</td>
+                <td>2.7</td>
+                <td>18</td>
+                <td>4.1</td>
+            </tr>
+            <tr  class="container">
+                <td>total</td>
+                <td>192</td>
+                <td>15.4</td>
+                <td>138</td>
+                <td>29.6</td>
+                <td>18</td>
+                <td>5.4</td>
+                <td>36</td>
+                <td>8.2</td>
+            </tr>
+            <tr>
+                <th colspan="2" class="table-header">total stations</th>
+                <td>384</td>
+                <td>30.8</td>
+                <td>276</td>
+                <td>58.4</td>
+                <td>36</td>
+                <td>8.2</td>
+                <td> 105</td>
+                <td>100%</td>
+            </tr>
+            <tr>
+                <th colspan="2" class="table-header">Insufficient Data</th>
+                <td>147</td>
+                <td>---</td>
+                <td>77</td>
+                <td>---</td>
+                <td>12</td>
+                <td>---</td>
+                <td>58</td>
+                <td>---</td>
+            </tr>
+            <tr>
+                <th colspan="2" class="table-header">Stations not Found</th>
+                <td>1</td>
+                <td>---</td>
+                <td>0</td>
+                <td>---</td>
+                <td>0</td>
+                <td>---</td>
+                <td>1</td>
+                <td>---</td>
+            </tr>
+            <tr>
+                <th colspan="2" class="table-header">All Licenced Stations</th>
+                <td>710</td>
+                <td>---</td>
+                <td>0</td>
+                <td>---</td>
+                <td>0</td>
+                <td>---</td>
+                <td>1</td>
+                <td>---</td>
+            </tr>
+        </tbody>
+      </table>
+
+    </div>
+    <div class="btncontainer">
+    <button class="btn">
+        <a href="login.html">Go to Login Page</a>
+    </button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <style>
+      .body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(251, 249, 250);
+        width: auto;
+        height: auto;
+        padding: 20px;
+        margin: 20px;
+        border: 3px solid black;
+      }
+      input {
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid rgb(182, 162, 162);
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .container .btn {
+        margin: 5px;
+        font-family: "Courier New", Courier, monospace;
+        padding: 5px;
+        background-color: rgb(165, 138, 117);
+        border: 2px solid black;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <div class="container">
+      <input type="text" placeholder="Username" />
+      <input type="password" placeholder="Password" />
+      <button class="btn">Login</button>
+      <a href="index.html">Forget Password</a>
+    </div>
+  </body>
+</html>

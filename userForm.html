@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Experience Form</title>
+
+    <style>
+    .body{
+        border: 3px solid black;
+        padding: 10px 10px;
+    }
+        .div
+        {
+            border: 1px solid black;
+            padding: auto;
+            background-color: rgb(162, 84, 31);
+            width: flex;
+            margin: auto;
+            border-radius: 15px;
+
+        }
+        .div h1{
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .table{
+            padding: 20px 20px;
+            width: flex;
+            border-collapse: collapse;
+            margin: auto;
+        
+        }
+        .table td{
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+
+        }
+        .table input[type="text"]{
+            width: 49%; 
+            padding: 8px;
+            border-radius: 15px;
+            border: 1px solid #fffefe;
+            box-sizing: border-box;
+        }
+        .table input[type="email"], [type="address"]{
+            width: 95%;
+            padding: 8px;
+            border-radius: 15px;
+            border: 1px solid #ccc;
+            ;
+        }
+        .table input[type="number"], [type="select"]{
+            width: 49%;
+            padding: 8px;
+            border-radius: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+
+            
+        }
+        .table input[type="radio"]{
+            display: block;
+            margin: auto;
+        }
+        .table select{
+            width: 49%;
+            padding: 8px;
+            border-radius: 15px;
+            border: 1px solid #ccc;
+
+        }
+        .table input[type="button"]{
+            width: 20%;
+            padding: 10px;
+            background-color: rgb(10, 184, 155);
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin: auto;
+            display: block;
+        }
+
+        
+    </style>
+</head>
+<body class="body">
+    <div class="div">
+        <h1>User Experience Form</h1>
+        <table class="table">
+        <tbody>
+
+            <tr >
+                <td colspan="6">name</td>
+            </tr>
+            <tr >
+                <td colspan="6"><input type="text" placeholder="first name" name="fname">
+                <input type="text" name="lname" id="lname" placeholder="last name">
+                </td>
+            </tr>
+              <tr>
+                <td colspan="6">email</td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <input type="email" name="email" id="email" placeholder="enter your email">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">phone</td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <input type="number" name="number" id="number" placeholder="##### #####">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">address
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <input type="address" name="address" id="address" placeholder="street address">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <input type="address" name="address2" id="address2" placeholder="street address line 2">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <input type="text" name="city" id="city" placeholder="city">
+                    <input type="text" name="region" id="region" placeholder="region">
+                </td>
+                </tr>
+            <tr>    
+                <td colspan="6">
+                    <input type="number" name="postal" id="postal" placeholder="postal zipcode">
+                    <select name="country" id="country">
+                        <option value="india">india</option>
+                        <option value="usa">usa</option>
+                        <option value="uk">uk</option>
+                        <option value="canada">canada</option>
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">quetions</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> very good</td>
+                <td>good</td>
+                <td>fair</td>
+                <td>poor</td>
+                <td>very poor</td>
+            </tr>
+            <tr>
+                <td>i enjoy this product</td>
+                <td >
+                    <input type="radio" name="question1" id="q1a" value="option1">
+                </td>
+                <td>
+                    <input type="radio" name="question1" id="q1b" value="option2">
+                </td>
+                <td>
+                    <input type="radio" name="question1" id="q1c" value ="option3">
+                </td>
+                <td>
+                    <input type="radio" name="question1" id="q1d" value="option4">
+                </td>
+                <td>
+                    <input type="radio" name="question1" id="q1e" value="option5">
+                </td>
+            </tr>
+
+            <tr>
+                <td>easy to use product</td>
+                <td>
+                    <input type="radio" name="question2" id="q1a" value="option1">
+                </td>
+                <td> 
+                    <input type="radio" name="question2" id="q1b" value="option2">
+                </td>
+                <td>
+                    <input type="radio" name="question2" id="q1c" value ="option3">
+                </td>
+                <td>
+                    <input type="radio" name="question2" id="q1d" value="option4">
+                </td>
+                <td>
+                    <input type="radio" name="question2" id="q1e" value="option5">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <input type="button" name="submit" id="submit" value="Submit">
+                </td>
+
+                </td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
