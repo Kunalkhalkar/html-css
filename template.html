@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            border: solid black;
+            padding: 10px;
+            width: 80%;
+            margin: auto;
+            box-sizing : border-box;    
+        }
+        .sub-container{
+            border: dotted red;
+            width: 10%;
+        }
+        .menu{
+            color: brown;
+        }
+        .menu-item{
+            color: red;
+            display: inline;
+            
+        }
+     
+         ul li{
+            display: inline-block;
+            background: white;
+         }
+        
+            ul li:hover ul{
+                display: block;
+            }
+            ul li ul {
+                position: absolute;
+                width: 200px;
+                display: none;
+            }
+         ul li ul li {
+            display: block;
+        
+         }
+         ul li ul li a{
+            display: block !important;/*important property is used to tell the webpage thet this is the important property and dont allow  to overrride it*/
+         }
+         
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>hello.ai</h1>
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="#">dropdown</a>
+                <ul>
+                    <li><a href="#">link1</a></li>
+                    <li><a href="#">link1</a></li>
+                    <li><a href="#">link1</a></li>
+
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+</body>
+</html>
