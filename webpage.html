@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Web Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .container {
+        border: 2px solid black;
+        width: 90%;
+        margin: auto;
+        min-height: 300px;
+      }
+      .header {
+        /* border: 2px solid green; */
+        background-color: aqua;
+      }
+      .menu {
+        /* border: 1px solid blue; */
+        margin-top: 2px;
+        background-color: aqua;
+
+      }
+      .menu ul {
+        list-style: none;
+        padding: 2px;
+      }
+      .menu ul li {
+        display: inline-block;
+      }
+      .menu ul li a {
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+      }
+      .menu ul li:hover {
+        background-color: yellow;
+        border-radius: 5px;
+      }
+      .container .slide-bar {
+        min-height: 300px;
+        /* border: 2px solid red; */
+        margin-top: 2px;
+      }
+      .sidebar-content{
+        display: flex;
+
+      }
+      .sidebar-content .side-bar {
+        align-items: left;
+        /* border: 1px solid blue; */
+        max-height: 200px;
+        overflow: auto;
+        max-width: 20%;
+        margin: 2px;
+      }
+      .sidebar-content .content {
+        align-items: flex-end;
+        /* border: 1px solid blue; */
+        max-width: 79%;
+        max-height: 200px;
+        overflow: auto;
+        margin: 2px;
+
+      }
+      .sidebar-content .side-bar img{
+        width: 180px;
+      }
+      .footer {
+        min-height: 25px;
+        line-height: 25px;
+        /* border: 2px solid red; */
+        width: 100%;
+        background-color: aqua;
+
+      }
+      .footer p {
+            align-items: center;
+            margin: auto;
+            max-width: fit-content;
+            font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>giri's tech hub</h1>
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">resume</a></li>
+        </ul>
+      </div>
+      <div class="slide-bar">
+        <p>slide bar</p>
+      </div>
+      <div class="sidebar-content">
+        <div class="side-bar">
+          <img src="./images/OIP.jpeg" alt="side image">
+        </div>
+
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+            exercitationem quis ut asperiores voluptatum facilis aut, atque
+            sapiente alias molestias laboriosam dolorem iste ullam. Laboriosam
+            quae molestias sapiente, doloribus eius odio culpa aut in incidunt
+            dolore voluptatibus possimus voluptatem quos provident officiis,
+            commodi necessitatibus, atque ipsum doloremque ducimus vero neque.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>website managed by bhagat</p>
+      </div>
+    </div>
+  </body>
+</html>
